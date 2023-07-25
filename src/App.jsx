@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import settings from './pages/settings';
+import Settings from './pages/Settings';
+import Finalscore from './pages/Finalscore';
+import Questions from './pages/Questions';
 
 
 function App() {
@@ -9,15 +11,9 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/">
-            <settings />
-          </Route>
-          <Route path="/">
-            <settings />
-          </Route>
-          <Route path="/">
-            <settings />
-          </Route>
+            <Route path="/" element={<Settings />} />
+            <Route path="/questions" element={<Questions />} />
+            <Route path="/score" element={<Finalscore />} />
         </Routes>
       </Router>
     </>
