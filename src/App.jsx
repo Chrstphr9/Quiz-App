@@ -12,6 +12,12 @@ function App() {
           <Route path="/">
             <settings />
           </Route>
+          <Route path="/">
+            <settings />
+          </Route>
+          <Route path="/">
+            <settings />
+          </Route>
         </Routes>
       </Router>
     </>
