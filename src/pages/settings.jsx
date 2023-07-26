@@ -2,7 +2,7 @@
 
 const settings = () => {
   return (
-    <div>settings</div>
+    <h1>settings</h1>
   )
 }
 
