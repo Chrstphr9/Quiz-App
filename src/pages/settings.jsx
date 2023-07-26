@@ -1,8 +1,11 @@
+import { Typography } from "@mui/material"
 
 
 const settings = () => {
   return (
-    <h1>settings</h1>
+    <Typography variant="h2" fontWeight='Bold'>
+      Quiz App
+    </Typography>
   )
 }
 
