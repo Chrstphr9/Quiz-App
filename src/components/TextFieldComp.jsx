@@ -4,12 +4,12 @@ import React from 'react'
 const TextFieldComp = () => {
 
     const handleChange = () => {
-        
+
     }
 
   return (
     <Box mt={3} width='100%'>
-        <FormControl>
+        <FormControl fullWidth size='small'>
             <TextField 
                 onChange={handleChange}
                 variant='outlined'
