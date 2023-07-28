@@ -1,11 +1,19 @@
-import { Box, Button, Typography } from "@mui/material"
+import { Box, Button, CircularProgress, Typography } from "@mui/material"
 import SelectField from "../components/SelectField"
 import TextFieldComp from "../components/TextFieldComp";
+import useAxios from "../hooks/useAxios"
 
 
-const settings = () => {
-
-    
+const Settings = () => {
+      const { response, error, loading} = useAxios({ url: "/api_category.php" })
+      
+      if(loading) {
+        return (
+          <Box mt={20}>
+            <CircularProgress />
+          </Box>
+        )
+      }
       const handleSubmit= e => {
         e.preventDefault();
       }
@@ -29,4 +37,4 @@ const settings = () => {
   )
 }
 
-export default settings
+export default Settings
